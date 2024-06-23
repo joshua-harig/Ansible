@@ -1,6 +1,6 @@
 ---
 
-- hosts: pihole
+- hosts: PiHole
   tasks:
   - name: Update Packages
     package:

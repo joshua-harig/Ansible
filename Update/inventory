@@ -1,5 +1,5 @@
 [pve_server]
-pihole		ansible_host=10.0.10.45
-nginx		ansible_host=10.0.10.46
+PiHole		ansible_host=10.0.10.45
+NPM		ansible_host=10.0.10.46
 DashboardServer	ansible_host=10.0.10.47
 UptimeKuma	ansible_host=10.0.10.48

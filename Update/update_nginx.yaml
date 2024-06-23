@@ -1,6 +1,6 @@
 ---
 
-- hosts: nginx
+- hosts: NPM
   tasks:
   - name: Update Packages
     package:

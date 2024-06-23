@@ -1,0 +1,13 @@
+---
+
+- hosts: UptimeKuma
+  tasks:
+  - name: Pull latest image
+    ansible.builtin.command:
+      chdir: /root/UptimeKuma
+      cmd: docker compose pull
+
+  - name: Redeploy container on change
+    ansible.builtin.command:
+      chdir: /root/UptimeKuma
+      cmd: docker compose up -d

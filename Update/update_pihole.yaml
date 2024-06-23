@@ -1,0 +1,16 @@
+---
+
+- hosts: pihole
+  tasks:
+  - name: Update Packages
+    package:
+      update_cache: yes
+      upgrade: yes
+
+  - name: Update PiHole
+    ansible.builtin.shell:
+      cmd: pihole -up
+
+  - name: Update Blocklists
+    ansible.builtin.shell:
+      cmd: pihole updateGravity

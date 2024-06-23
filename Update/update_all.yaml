@@ -1,0 +1,6 @@
+---
+- import_playbook: update_package_index.yaml
+- import_playbook: update_pihole.yaml
+- import_playbook: update_nginx.yaml
+- import_playbook: update_dashboard.yaml
+- import_playbook: update_uptimekuma.yaml

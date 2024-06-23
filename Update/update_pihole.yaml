@@ -2,11 +2,6 @@
 
 - hosts: PiHole
   tasks:
-  - name: Update Packages
-    package:
-      update_cache: yes
-      upgrade: yes
-
   - name: Update PiHole
     ansible.builtin.shell:
       cmd: pihole -up

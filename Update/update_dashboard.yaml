@@ -2,11 +2,6 @@
 
 - hosts: DashboardServer
   tasks:
-  - name: Update Packages
-    package:
-      update_cache: yes
-      upgrade: yes
-
   - name: Pull latest image standard
     ansible.builtin.command:
       chdir: /root/dashboard/standard

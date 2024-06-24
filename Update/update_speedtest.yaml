@@ -1,0 +1,13 @@
+---
+
+- hosts: OpenSpeedTest
+  tasks:
+  - name: Pull latest image
+    ansible.builtin.command:
+      chdir: /root/OpenSpeedTest
+      cmd: docker compose pull
+
+  - name: Redeploy container on change
+    ansible.builtin.command:
+      chdir: /root/OpenSpeedTest
+      cmd: docker compose up -d

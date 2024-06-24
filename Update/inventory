@@ -3,3 +3,4 @@ PiHole		ansible_host=10.0.10.45
 NPM		ansible_host=10.0.10.46
 DashboardServer	ansible_host=10.0.10.47
 UptimeKuma	ansible_host=10.0.10.48
+OpenSpeedTest	ansible_host=10.0.10.70

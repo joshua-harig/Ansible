@@ -21,3 +21,13 @@
     ansible.builtin.command:
       chdir: /root/dashboard/explicit
       cmd: docker compose up -d
+
+  - name: Pull latest image elisabeth
+    ansible.builtin.command:
+      chdir: /root/dashboard/elisabeth
+      cmd: docker compose pull
+
+  - name: Redeploy container on change
+    ansible.builtin.command:
+      chdir: /root/dashboard/elisabeth
+      cmd: docker compose up -d
